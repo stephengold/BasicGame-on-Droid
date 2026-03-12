@@ -37,7 +37,6 @@ dependencies {
     implementation project(path: ':game')
 
     implementation libs.appcompat
-    implementation libs.constraintlayout
     implementation libs.jme3.android
     implementation libs.jme3.android.native
     implementation libs.material

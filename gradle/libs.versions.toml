@@ -22,7 +22,6 @@ jme = "3.9.0-stable"
 [libraries]
 
 appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.1" }
-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version = "2.2.1" }
 heart = "com.github.stephengold:Heart:9.3.0"
 
 jme3-android = { module = "org.jmonkeyengine:jme3-android", version.ref = "jme" }
