@@ -1,0 +1,33 @@
+// Gradle script to build the "game" subproject of BasicGame-on-Droid
+
+plugins {
+    id 'java-library' // to build JVM libraries
+}
+
+dependencies {
+    // You can read more about how to add dependencies here:
+    // https://docs.gradle.org/current/userguide/part3_gradle_dep_man.html
+
+    // from mavenCentral (or mavenLocal) repositories:
+    api libs.jme3.core
+    //implementation libs.jme3.effects
+    //implementation libs.jme3.jogg
+    //implementation libs.jme3.networking
+    //implementation libs.jme3.plugins
+    //implementation libs.jme3.terrain
+
+    // BasicGame doesn't use physics. If your game needs physics, select one of:
+    //    1. Minie
+    //implementation libs.minie
+    // OR
+    //    2. jme3-jbullet
+    //implementation libs.jme3.jbullet
+
+    // other add-on libraries:
+    //implementation libs.heart
+    //implementation libs.jmePower
+    //implementation libs.particlemonkey
+    //implementation libs.sim.math
+    //implementation libs.wes
+    //runtimeOnly libs.jme3.testdata
+}

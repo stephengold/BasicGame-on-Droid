@@ -1,0 +1,44 @@
+// Gradle script to build the "app" subproject of BasicGame-on-Droid
+
+plugins {
+    alias(libs.plugins.android.application) // to build Android apps
+}
+
+android {
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileSdk 36
+    configurations.configureEach {
+        exclude group:"org.jmonkeyengine", module:"jme3-desktop"
+    }
+    defaultConfig {
+        applicationId "mygame.launcher"
+        minSdk 28
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+    namespace "mygame"
+    packaging {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':game')
+
+    implementation libs.appcompat
+    implementation libs.constraintlayout
+    implementation libs.jme3.android
+    implementation libs.jme3.android.native
+    implementation libs.material
+}

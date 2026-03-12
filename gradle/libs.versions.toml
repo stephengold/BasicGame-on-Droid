@@ -1,0 +1,50 @@
+## catalog of libraries and plugins used to build the BasicGame-on-Droid project
+
+## You can read more about catalogs here:
+## https://docs.gradle.org/current/userguide/version_catalogs.html#sec::toml-dependencies-format
+
+[versions]
+
+agp = "8.13.2"
+
+## select one version of JMonkeyEngine:
+#jme = "3.1.0-stable"
+#jme = "3.2.4-stable"
+#jme = "3.3.2-stable"
+#jme = "3.4.1-stable"
+#jme = "3.5.2-stable"
+#jme = "3.6.1-stable"
+#jme = "3.7.0-stable"
+#jme = "3.8.1-stable"
+jme = "3.9.0-stable"
+#jme = "3.10.0-alpha1"
+
+[libraries]
+
+appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.1" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version = "2.2.1" }
+heart = "com.github.stephengold:Heart:9.3.0"
+
+jme3-android = { module = "org.jmonkeyengine:jme3-android", version.ref = "jme" }
+jme3-android-native = { module = "org.jmonkeyengine:jme3-android-native", version.ref = "jme" }
+jme3-core = { module = "org.jmonkeyengine:jme3-core", version.ref = "jme" }
+jme3-effects = { module = "org.jmonkeyengine:jme3-effects", version.ref = "jme" }
+jme3-jbullet = { module = "org.jmonkeyengine:jme3-jbullet", version.ref = "jme" }
+jme3-jogg = { module = "org.jmonkeyengine:jme3-jogg", version.ref = "jme" }
+jme3-networking = { module = "org.jmonkeyengine:jme3-networking", version.ref = "jme" }
+jme3-plugins = { module = "org.jmonkeyengine:jme3-plugins", version.ref = "jme" }
+jme3-terrain = { module = "org.jmonkeyengine:jme3-terrain", version.ref = "jme" }
+jme3-testdata = { module = "org.jmonkeyengine:jme3-testdata", version.ref = "jme" }
+
+jmePower = "com.github.stephengold:JmePower:1.1.1"
+material = { module = "com.google.android.material:material", version = "1.13.0" }
+minie = "com.github.stephengold:Minie:9.0.3"
+particlemonkey = "com.epagagames:particlemonkey:1.1.0"
+sim-math = "com.simsilica:sim-math:1.6.0"
+wes = "com.github.stephengold:Wes:0.8.3"
+
+[bundles]
+
+[plugins]
+
+android-application = { id = "com.android.application", version.ref = "agp" }
