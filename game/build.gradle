@@ -25,7 +25,6 @@ dependencies {
 
     // other add-on libraries:
     //implementation libs.heart
-    //implementation libs.jmePower
     //implementation libs.particlemonkey
     //implementation libs.sim.math
     //implementation libs.wes
