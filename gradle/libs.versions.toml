@@ -17,7 +17,7 @@ agp = "8.13.2"
 #jme = "3.7.0-stable"
 #jme = "3.8.1-stable"
 jme = "3.9.0-stable"
-#jme = "3.10.0-alpha1"
+#jme = "3.10.0-alpha3"
 
 [libraries]
 
